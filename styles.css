@@ -6,11 +6,13 @@ body {
     padding: 0;
     height: 3000px;
     background-color: #242424;
+    color: white;
+    align-items: center;
 }
 
 header {
     position: absolute;
-    background-image: url(https://marsdd.com/wp-content/uploads/2020/01/blog-tech-conferences.jpg);
+    background-image: url("./bg.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,9 +36,11 @@ header {
     font-size: 40px;
     margin: auto;
     margin-top: 10%;
+    font-weight: bold;
+    width: 90%;
     color: white;
     text-align: center;
-    text-shadow: 10px 10px 10px black;
+    text-shadow: 5px 5px 5px black;
 }
 
 .navbar {
@@ -48,6 +52,7 @@ header {
     height: 60px;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .navbar li {
@@ -59,3 +64,17 @@ header {
     text-decoration: none;
     color: white;
 }
+
+#about {
+    margin-top: 800px;
+}
+
+.img-fluid {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+/* 
+.row {
+    display: flex;
+    flex-direction: row;
+}    */
