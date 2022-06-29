@@ -7,6 +7,8 @@ body {
     background-color: #242424;
     color: white;
     align-items: center;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -52,6 +54,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100%;
+    overflow-x: scroll;
 }
 
 .navbar li {
@@ -751,6 +755,11 @@ a {
     color: #fff;
   }
   
+  #past {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
   /*--------------------------------------------------------------
   # Speakers Section
   --------------------------------------------------------------*/
