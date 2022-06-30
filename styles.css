@@ -9,6 +9,8 @@ body {
     align-items: center;
     width: 100%;
     overflow-x: hidden;
+    width: 100%;
+    min-width: 420px;
 }
 
 header {
@@ -23,6 +25,7 @@ header {
     align-items: center;
     z-index: 0;
     width: 100%;
+    min-width: 420px;
 }
 
 .about-btn {
@@ -109,6 +112,10 @@ header {
 .navbar li a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 450px) {
+  #conf-desc { font-size: 15px;}
 }
 
 #about {
@@ -748,6 +755,141 @@ a {
       opacity: 0;
     }
   }
+
+
+  /*--------------------------------------------------------------
+  # Slideshow
+  --------------------------------------------------------------*/
+
+
+  .slide-container {
+    margin-top: 0px;
+    padding: 30px;
+    position: relative;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    padding-bottom: 0;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 40px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    border-radius: 0  0 20px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .caption-container p {
+    margin-bottom: 0;
+  }
+  
+  .caption-container a {
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    visibility: hidden;
+    height: 0;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  @media (max-width: 574px) {
+    .slide-container {
+      width: 85%;
+      padding: 0;
+      background-color: white;
+    }
+    .caption-container {
+      font-size: 20px;
+      background-color: white;
+      color: black;
+    }
+    .mySlides {
+      width: 100%;
+      border-radius: 20px;
+    }
+    #site {
+      color: black;
+    }
+  }
+  
+
+  /* END OF SLIDESHOW STYLES */
+
   
   /*--------------------------------------------------------------
   # About Section
@@ -801,6 +943,10 @@ a {
   #past {
     width: 100%;
     overflow-x: scroll;
+  }
+
+  .slide-img {
+    width: 70%;
   }
 
   /*--------------------------------------------------------------
