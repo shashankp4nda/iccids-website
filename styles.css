@@ -13,7 +13,7 @@ body {
 
 header {
     position: absolute;
-    background-image: url("./bg.jpeg");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/544/202/original/blue-technology-circle-and-computer-science-abstract-background-with-blue-and-binary-code-matrix-business-and-connection-futuristic-and-industry-4-0-concept-internet-cyber-and-network-theme-vector.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,6 +22,7 @@ header {
     margin-top: 0;
     align-items: center;
     z-index: -1;
+    width: 100%;
 }
 
 .blur {
@@ -34,14 +35,22 @@ header {
 }
 
 #heading {
-    font-size: 40px;
+    font-size: 30px;
     margin: auto;
     margin-top: 10%;
     font-weight: bold;
     width: 90%;
     color: white;
-    text-align: center;
+    text-align: left;
     text-shadow: 5px 5px 5px black;
+}
+
+#conf-name {
+  font-size: 65px;
+}
+
+#conf-desc {
+  font-size: 20px;
 }
 
 .navbar {
