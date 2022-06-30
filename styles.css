@@ -4,8 +4,8 @@ body {
     font-family:  "DM Sans", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #242424;
-    color: white;
+    background-color: white;
+    color: black;
     align-items: center;
     width: 100%;
     overflow-x: hidden;
@@ -21,8 +21,40 @@ header {
     height: 700px;
     margin-top: 0;
     align-items: center;
-    z-index: -1;
+    z-index: 0;
     width: 100%;
+}
+
+.about-btn {
+    z-index: 15;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #205375;
+    margin-left: 10%;
+}
+
+@media (max-width: 574px) {
+  .about-btn {
+    margin-left: 25%;
+    background-color: #205375;
+  }
+}
+
+.about-btn:hover {
+  background: #406882;
+  color: #fff;
 }
 
 .blur {
@@ -31,8 +63,10 @@ header {
 
 #header-logo {
     height: 40px;
-    margin: auto 3%;
+    margin: auto 7%;
 }
+
+
 
 #heading {
     font-size: 30px;
@@ -94,13 +128,13 @@ header {
 
  
 a {
-    color: white;
+    color: black;
     text-decoration: none;
     transition: 0.5s;
   }
   
   a:hover, a:active, a:focus {
-    color: white;
+    color: black;
     outline: none;
     text-decoration: none;
   }
@@ -115,7 +149,7 @@ a {
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
-    color: white;
+    color: black;
   }
   
   .main-page {
@@ -385,7 +419,7 @@ a {
   }
   
   .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-    color: white;
+    color: black;
   }
   
   .navbar .dropdown:hover > ul {
@@ -483,7 +517,7 @@ a {
   }
   
   .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: white;
+    color: black;
   }
   
   .navbar-mobile .getstarted {
@@ -880,6 +914,40 @@ a {
     color: white;
     font-size: 15px;
     margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .row-2 {
+    width: fit-content;
+  }
+  
+  .col-2 {
+    width: fit-content;
+    margin: 0 20px;
+  }
+
+  .convs {
+    align-items: center;
+    margin-left: 20%;
+  }
+
+  .convs .details {
+    width: fit-content;
+  }
+
+  @media (max-width: 574px) {
+    .convs {
+      align-items: center;
+      margin-left: 0;
+    }
+  }
+
+  .tpc {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
   }
 
   /*--------------------------------------------------------------
@@ -1072,6 +1140,22 @@ a {
     transform: scale(1.1);
   }
   
+  #map-tile {
+    margin-top: 40px;
+    margin-left: 25%;
+    border: 5px solid grey;
+    border-radius: 20px;
+    padding: 0;
+    width: 50%;
+  }
+
+  @media (max-width: 574px) {
+    #map-tile {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+
   /*--------------------------------------------------------------
   # Hotels Section
   --------------------------------------------------------------*/
