@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family:  "DM Sans", sans-serif;
     margin: 0;
@@ -66,7 +70,7 @@ header {
 
 #header-logo {
     height: 40px;
-    margin: auto 7%;
+    margin: auto 30px;
 }
 
 
@@ -108,6 +112,13 @@ header {
     margin: auto 10px;
     list-style: none;
 }
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding-right: 60px;
+  margin: 0 auto;
+}
 
 .navbar li a {
     text-decoration: none;
@@ -116,6 +127,12 @@ header {
 
 @media (max-width: 450px) {
   #conf-desc { font-size: 15px;}
+}
+
+@media (max-width: 700px) {
+  .navbar-items {
+    visibility: hidden;
+  }
 }
 
 #about {
@@ -1090,10 +1107,11 @@ a {
 
   .tpc {
     width: fit-content;
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
     text-align: left;
     align-items: center;
+    font-size: 30px;
   }
 
   /*--------------------------------------------------------------
